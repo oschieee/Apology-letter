@@ -5,7 +5,7 @@ function App() {
   const [showLetter, setShowLetter] = useState(false);
 
   // Put your image URL here
-  const backgroundImageUrl = "/Untitled design.jpg";
+  const backgroundImageUrl = "/bgchels.jpg";
 
   const containerStyle = {
     // The linear-gradient creates a dark overlay so your white box and text stay readable
