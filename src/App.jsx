@@ -40,7 +40,7 @@ function App() {
           <div className="spotify-container">
             <iframe 
               style={{ borderRadius: "12px" }} 
-              src="https://open.spotify.com/embed/track/1Fo4OvzP9PThFKMeMIAEYu?utm_source=generator&autoplay=1" 
+              src="https://open.spotify.com/embed/track/4fFfyouye6vrX9o9z4PVMu?utm_source=generator&theme=0" 
               width="100%" 
               height="152" 
               frameBorder="0" 
