@@ -6,7 +6,12 @@ function App() {
 
   return (
     <div className="background-container">
-      
+      {!showLetter ? (
+        /* This button "unlocks" the ability to show the content */
+        <button className="start-btn" onClick={() => setShowLetter(true)}>
+          Open Letter
+        </button>
+      ) : (
         <div className="content-wrapper">
           {/* Your Spotify Link */}
           <div className="spotify-container">
@@ -35,7 +40,7 @@ function App() {
   </p>
 </div>
         </div>
-      
+      )}
     </div>
   );
 }
