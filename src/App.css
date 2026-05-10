@@ -1,0 +1,59 @@
+.background-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* This creates a tiled effect if you use a collage image */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* If you want a real grid of many photos, we can use this overlay: */
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  opacity: 0.3; /* Makes the photos subtle so the text is readable */
+  z-index: 1;
+  /* You can use a collage maker online and put the single link here */
+  background-image: url('public/Untitled design.jpg');
+  background-size: 300px; /* Adjust this to make the photos smaller/bigger */
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2; /* Sits above the photos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 90%;
+}
+
+.message-box {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 50px 30px;
+  border-radius: 15px; /* Your requested radius */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 450px;
+  backdrop-filter: blur(5px); /* Makes the white box look high-end */
+}
+
+.message-box h1 {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: black;
+ 
+}
+
+.poetic-text {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: #444;
+  font-style: italic;
+}
